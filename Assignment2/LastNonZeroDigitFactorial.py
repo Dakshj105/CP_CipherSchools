@@ -1,4 +1,4 @@
-def calc2spower(n : "Power"):
+def calc2spower(n):
     s = "6248"
     return int(s[n % 4]) if n != 0 else 1
 
