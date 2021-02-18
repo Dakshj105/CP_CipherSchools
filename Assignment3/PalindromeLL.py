@@ -25,16 +25,6 @@ class LinkedList:
         self.tail = cur.next
         self.length += 1
 
-    def reverseLLIter(self):
-        pre = None
-        next = None
-        cur = self.head
-        while(cur):
-            next = cur.next
-            cur.next = pre
-            pre = cur
-            cur = next
-        self.head = pre
     def checkPalindrome(self):
             cur = self.head
             if cur == None or cur.next == None:
@@ -99,4 +89,3 @@ a.add(5)
 a.add(3)
 print(a.checkPalindrome())
 a.printLL()
-print(a.length)
