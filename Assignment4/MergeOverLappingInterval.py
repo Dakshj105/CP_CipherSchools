@@ -30,7 +30,7 @@ def MergeOverLappingInterval(li, n):
             stack.put(li[i][1])
     li = []
     reverseStack(stack)
-    while(stack.not_empty):
+    while(stack.empty()):
         print(f"[{stack.get()} {stack.get()}]")
     return
 
